@@ -1,0 +1,13 @@
+a.py: .FORCE
+	echo "print('This is 2XC3 course')" > a.py
+	echo "print('We are learning how to use the make utility')" >> a.py
+	echo "print('It is a cinch')" >> a.py
+	echo "print('If you do not know the meaning of \"It is a cinch\", google it')" >> a.py
+	grep 'B+' garble > temp
+	sed 's/B+//' < temp >> a.py
+	rm temp
+.FORCE:
+show: a.py
+	python3 a.py
+clean:
+	rm a.py

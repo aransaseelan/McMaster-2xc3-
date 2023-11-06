@@ -1,0 +1,12 @@
+#ifdef _PT
+  printf("Pressure and temperature are both nominal\n");
+  return 0;
+#endif
+#ifdef _PTN
+  itrex1();
+  itrex2();
+  itrex3();
+  return 0;
+#endif
+  return 0;
+}

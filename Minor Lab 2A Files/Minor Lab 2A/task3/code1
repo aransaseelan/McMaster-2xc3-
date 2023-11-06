@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+#ifdef _OTP
+  void od1();
+  void od2();
+  void od3();
+  void od4();
+#endif

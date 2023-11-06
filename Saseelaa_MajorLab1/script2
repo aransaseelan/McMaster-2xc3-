@@ -1,0 +1,45 @@
+#!/bin/bash
+# script script2
+
+bname=`basename $0`
+echo "This is script $bname"
+
+date=$(date +"%Y-%m-%d %H:%M:%S")
+echo "$date"
+
+os=$(uname -a)
+echo "$os"
+
+echo "Major lab 1, L03: bash script named $bname"
+
+echo "Available disk space"
+df -h
+
+if [ $# -ne 1 ]
+then
+  echo "script2: wrong number of command line arguments"
+  echo "usage --script2 $script_name <friend_name>"
+  exit
+fi
+
+if [ "$1" = "User1" ] || [ "$1" = "User2" ] || [ "$1" = "User3" ] || [ "$1" = "User4" ]
+  echo "The provided username is: $1"
+else
+  echo "script2: no applicable name supplied"
+  exit 
+fi
+
+echo "script2: $1's welcome"
+
+echo "#include <stdio.h>" > welcome.c
+echo "int main() {" >> welcome.c
+echo "  printf(\"Hello $username, you are now part of the team \\n\");" >> welcome.c
+echo "  return 0;" >> welcome.c
+echo "}" >> welcome.c
+
+gcc -0 welcome welcome.c
+
+
+
+
+

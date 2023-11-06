@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ -o itrexP itrex.cpp -D_P

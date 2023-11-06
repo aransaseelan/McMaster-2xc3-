@@ -1,0 +1,10 @@
+#ifdef _OTP
+  od1();
+  od2();
+  od3();
+  od4();
+  return 0;
+#endif
+  printf("system 4 not operational yet\n");
+  return 0;
+}

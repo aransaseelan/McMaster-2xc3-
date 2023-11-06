@@ -1,0 +1,9 @@
+int main() {
+#ifdef _O
+  printf("system 1 is great\n");
+  return 0;
+#endif
+#ifdef _OT
+  printf("system 2 is lousy\n");
+  return 0;
+#endif

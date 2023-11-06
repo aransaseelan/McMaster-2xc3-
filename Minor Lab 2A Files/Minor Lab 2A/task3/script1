@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ -o q1 od.cpp -D_O

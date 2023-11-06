@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+#ifdef _PTN
+  extern void itrex1();
+  extern void itrex2();
+  extern void itrex3();
+#endif
+int main() {
+  printf("Technical parameters:\n");
+#ifdef _P
+  printf("Pressure is nominal\n");
+  return 0;
+#endif

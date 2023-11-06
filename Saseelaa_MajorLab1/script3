@@ -1,0 +1,15 @@
+#!/bin/bash
+# Script3
+
+for i in {1..7}
+do 
+ week="week$i"
+ echo "ABC" > "$week"
+done
+
+files=`ls`
+for f in $files
+do 
+   echo $f:
+   cat $f
+done 
